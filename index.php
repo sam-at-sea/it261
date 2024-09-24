@@ -9,6 +9,7 @@
 
 <body>
     <a href="/it261/">it261</a>
+    <a href="https://github.com/sam-at-sea/it261">GitHub</a>
 </body>
 
 </html>
