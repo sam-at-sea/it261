@@ -52,7 +52,7 @@ $url = $protocol . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
             <li>All rights reserved</li>
             <li><a href="/it261/">Web design by -_-</a></li>
             <li><a href="https://validator.w3.org/?doc=<?= $url ?>">HTML Validation</a></li>
-            <li><a href="https://jigsaw.w3.org/css-validator/?uri=<?= $url ?>">CSS Validation</a></li>
+            <li><a href="https://jigsaw.w3.org/css-validator/validator?uri=<?= $url ?>">CSS Validation</a></li>
         </ul>
     </footer>
 </body>
