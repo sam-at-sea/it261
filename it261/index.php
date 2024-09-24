@@ -1,4 +1,7 @@
 <?php
+$protocol = $_SERVER['PROTOCOL'] = isset($_SERVER['HTTPS']) && !empty($_SERVER['HTTPS']) ? 'https' : 'http';
+$url = $protocol . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+
 $path = './weeks';
 $weeks = array_slice(scandir($path), 2);
 $files = array();
