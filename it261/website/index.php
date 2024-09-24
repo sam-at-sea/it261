@@ -15,7 +15,7 @@ $url = $protocol . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 
 <body>
     <header>
-        <img src="/it261/website/images/logo.png" alt="logo image">
+        <img src="/it261/website/images/logo.webp" alt="logo image">
         <nav>
             <ul>
                 <li><a href="/it261/index.php">Home</a></li>
@@ -28,7 +28,7 @@ $url = $protocol . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
         </nav>
     </header>
     <main>
-        <img src="/it261/website/images/hero.png" alt="hero image">
+        <img src="/it261/website/images/hero.webp" alt="hero image">
         <div class="content-wrapper">
             <div class="content">
 
