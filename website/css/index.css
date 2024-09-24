@@ -1,0 +1,165 @@
+/* defaults */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    background-color: #222;
+    color: #f1f1f1;
+    font-family: sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+    padding: 0;
+}
+
+/* elements */
+
+header,
+main,
+footer {
+    padding: 2rem 20rem;
+}
+
+header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    display: flex;
+    background-color: #333;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        height: 2lh;
+        aspect-ratio: 1;
+        object-fit: contain;
+        border-radius: 50%;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    img {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        background-color: #333;
+    }
+
+    .content-wrapper {
+        display: flex;
+        gap: 2rem;
+
+        .content,
+        aside {
+            padding: 2rem;
+        }
+    }
+
+    .content {
+        background-color: #2293bf;
+        flex: 2 1 0;
+    }
+
+    aside {
+        flex: 1 1 0;
+        background-color: #6836b9;
+        height: fit-content;
+    }
+}
+
+footer ul {
+    justify-content: space-between;
+}
+
+/* responsive stuff */
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+    header,
+    main,
+    footer {
+        padding: 2rem 15rem;
+    }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    body {
+        font-size: 1rem;
+    }
+
+    header,
+    main,
+    footer {
+        padding: 2rem 15rem;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    body {
+        font-size: 0.8rem;
+    }
+
+    main .content-wrapper {
+        flex-direction: column-reverse;
+    }
+
+    header,
+    main,
+    footer {
+        padding: 2rem 10rem;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    ul {
+        gap: 0.5rem;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    footer ul {
+        flex-wrap: wrap;
+    }
+
+    header,
+    main,
+    footer {
+        padding: 2rem 4rem;
+    }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    header,
+    main,
+    footer {
+        padding: 2rem;
+    }
+}
