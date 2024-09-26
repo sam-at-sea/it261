@@ -16,9 +16,17 @@ a:hover {
 body {
     background-color: #222;
     color: #f1f1f1;
+
     font-family: sans-serif;
     font-size: 1.25rem;
     line-height: 1.5;
+
+    margin: auto;
+    max-width: 1000px;
+
+    > * {
+        margin-top: 2rem;
+    }
 }
 
 ul {
@@ -29,15 +37,7 @@ ul {
 }
 
 /* elements */
-main,
-footer {
-    padding: 2rem 20rem;
-}
-
 header {
-    margin: 2rem 20rem;
-    margin-bottom: 0;
-
     h1 {
         text-align: center;
         margin-bottom: 2rem;
@@ -45,10 +45,10 @@ header {
 
     nav ul {
         background-color: #333;
-        align-items: center;
+        justify-content: space-around;
 
         li {
-            padding: 2rem;
+            padding: 1rem;
         }
     }
 }
@@ -65,6 +65,10 @@ main {
     .content {
         flex: 2 1 0;
         background-color: #2293bf;
+
+        img {
+            width: 100%;
+        }
     }
 
     aside {
@@ -75,7 +79,65 @@ main {
 }
 
 footer {
+    padding: 1rem 0rem;
+
     ul {
         justify-content: center;
+        li {
+            padding: 1rem;
+        }
     }
+}
+
+@media (max-width: 1399.98px) {
+    body {
+        max-width: 800px;
+    }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    body {
+        font-size: 1rem;
+        max-width: 800px;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    body {
+        font-size: 0.8rem;
+        max-width: 800px;
+    }
+
+    main {
+        flex-direction: column-reverse;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    ul {
+        gap: 0.5rem;
+    }
+
+    body {
+        margin: 0 2rem;
+    }
+
+    header nav ul {
+        flex-wrap: wrap;
+
+        li {
+            padding: 1rem 1.5rem;
+        }
+    }
+
+    footer ul {
+        flex-wrap: wrap;
+    }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
 }
