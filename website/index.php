@@ -10,25 +10,25 @@ $url = $protocol . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
-    <link rel="stylesheet" href="/it261/website/css/index.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
     <header>
-        <img src="/it261/website/images/logo.webp" alt="logo image">
+        <img src="images/logo.webp" alt="logo image">
         <nav>
             <ul>
-                <li><a href="/it261/index.php">Home</a></li>
-                <li><a href="/it261/website/about.php">About</a></li>
-                <li><a href="/it261/website/daily.php">Daily</a></li>
-                <li><a href="/it261/website/contact.php">Project</a></li>
-                <li><a href="/it261/website/contact.php">Contact</a></li>
-                <li><a href="/it261/website/contact.php">Gallery</a></li>
+                <li><a href="/index.php">Home</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="daily.php">Daily</a></li>
+                <li><a href="contact.php">Project</a></li>
+                <li><a href="contact.php">Contact</a></li>
+                <li><a href="contact.php">Gallery</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <img src="/it261/website/images/hero.webp" alt="hero image">
+        <img src="images/hero.webp" alt="hero image">
         <div class="content-wrapper">
             <div class="content">
 
@@ -50,7 +50,7 @@ $url = $protocol . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
         <ul>
             <li>Copyright &copy; 2024</li>
             <li>All rights reserved</li>
-            <li><a href="/it261/">Web design by -_-</a></li>
+            <li><a href="/">Web design by -_-</a></li>
             <li><a href="https://validator.w3.org/?doc=<?= $url ?>">HTML Validation</a></li>
             <li><a href="https://jigsaw.w3.org/css-validator/validator?uri=<?= $url ?>">CSS Validation</a></li>
         </ul>
